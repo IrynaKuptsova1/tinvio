@@ -2095,6 +2095,27 @@ section[id] {
   }
 }
 
+@media (min-width: 1921px) {
+  .section-bg__black::after {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 1920px;
+    background: #363636;
+    clip-path: polygon(
+      0 43px,
+      min(303px, 100%) 0,
+      100% 0,
+      100% calc(1014.87px - 13.535vw),
+      0 755px
+    );
+    content: "";
+    pointer-events: none;
+  }
+}
+
 @media (max-width: 1300px) and (min-width: 769px) {
   .features__wrapper {
     max-width: 1032px;
