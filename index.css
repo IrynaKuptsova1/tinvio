@@ -2490,13 +2490,16 @@ section[id] {
     padding-top: 258px;
   }
   .why__title {
+    width: calc(100% - 32px);
+    margin-inline: auto;
     font-size: 28px;
     line-height: 33px;
+    transform: none;
   }
   .section-bg__black .single-item {
     width: calc(100% - 32px);
     height: 550px;
-    margin-left: 32px;
+    margin-inline: 16px;
     left: 0;
   }
   .middle-native-bg--768 {
@@ -2506,6 +2509,11 @@ section[id] {
     display: block;
     left: 0;
     top: -86.78px;
+    width: 100%;
+  }
+  .middle-native-bg--375 > svg {
+    width: 100%;
+    height: 1155px;
   }
   .reviews__overlay-mobile {
     display: block;
@@ -2719,7 +2727,7 @@ section[id] {
     transform: rotate(50.5deg) scale(.66572);
   }
   .why__title {
-    transform: translateX(-2.5px);
+    transform: none;
   }
   .reviews__field--left {
     left: -279px;
